@@ -1,0 +1,10 @@
+analysis:
+  image: data_science_analysis
+  container_name: data_science_analysis
+  restart: always
+  hostname: '0.0.0.0'
+  ports:
+     - "8888:8888"
+  volumes:
+    - ./src:/app/src
+    - ./data:/app/data
